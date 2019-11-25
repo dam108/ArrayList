@@ -27,7 +27,7 @@ public class EjArrayList0712 {
     }
     public static void ejecutarOpcion(int n){
         switch(n){
-            case 1: /* TENGO QUE CAMBIAR TODO A DOBLES  */
+            case 1:
                 System.out.println("Introduce una altura");
                 alturas.añadirAltura(teclado.nextDouble());
                 break;
