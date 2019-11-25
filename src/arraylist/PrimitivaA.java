@@ -1,5 +1,6 @@
 package arraylist;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrimitivaA {
     private ArrayList <Integer> resultadoSorteo;
@@ -17,6 +18,7 @@ public class PrimitivaA {
                 
             } while(resultadoSorteo.contains(n)); // con contains comprobamos si n esta ya dentro del ArrayList
             resultadoSorteo.add(n); // con add añadimos un n al arrayList
+            Collections.sort(resultadoSorteo); // ordenamos los elementos destro del arraylist
         }
 
     }// fin Contructor
