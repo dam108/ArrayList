@@ -27,13 +27,14 @@ public class EjArrayList0712 {
     }
     public static void ejecutarOpcion(int n){
         switch(n){
-            case 1: 
+            case 1: /* TENGO QUE CAMBIAR TODO A DOBLES  */
                 System.out.println("Introduce una altura");
-                alturas.añadirAltura(teclado.nextInt());
+                alturas.añadirAltura(teclado.nextDouble());
                 break;
             case 2:
                 for (int i = 0; i < alturas.getAlturas().size() ; i++) {
-                    System.out.println("Posicion "+(i+1)+ " - altura: "+alturas.getAlturas().get(i));
+                    double a = alturas.getAlturas().get(i);
+                    System.out.printf("Posicion %d - altura: %.2f \n", i,a);
                 }
                 break;
             case 3:
@@ -43,7 +44,7 @@ public class EjArrayList0712 {
                 break;
             case 4:
                 System.out.println("Introduce el valor de la altura que quieres eliminar: ");
-                int al = teclado.nextInt();
+                double al = teclado.nextDouble();
                 while (alturas.getAlturas().indexOf(al) != -1){
                     alturas.getAlturas().remove(alturas.getAlturas().indexOf(al));
                 }
@@ -54,7 +55,4 @@ public class EjArrayList0712 {
                 break;
         }
     }
-    
-
-    
 }       // fin class

@@ -3,20 +3,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class AlturaAlumnos {
-private ArrayList <Integer> alturas = new ArrayList <>();
+private ArrayList <Double> alturas = new ArrayList <>();
 
     
     /* CONSTRUCTOR */
     AlturaAlumnos () {
-        ArrayList <Integer> alturas;
+        ArrayList <Double> alturas;
 
     }// fin Contructor
 
-    public ArrayList<Integer> getAlturas() {
+    public ArrayList <Double> getAlturas() {
         return alturas;
     }
     
-    public void añadirAltura (int altura){
+    public void añadirAltura (double altura){
         alturas.add(altura);
         Collections.sort(alturas);
     }
