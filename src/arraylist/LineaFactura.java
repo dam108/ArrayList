@@ -7,7 +7,7 @@ public class LineaFactura {
     private int cantUnidad;
     private float descuento;
     
-    LineaFactura(String descip, double precioU, int cantUni, float descu, double imporLinea){
+    LineaFactura(String descip, double precioU, int cantUni, float descu){
         descipcion = descip;
         precioUnidad = precioU;
         importeLinea = (precioU * cantUni) - descu;
