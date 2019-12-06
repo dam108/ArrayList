@@ -26,11 +26,11 @@ public class Carta {
     public String getPalo() {
         return palo;
     }
-
-    /* FIN METODOS */
-
+    
     public void setNumero(int numero) {
         this.numero = numero;
     }
-    
+
+    /* FIN METODOS */
+
 } /* FIN CLASS */
