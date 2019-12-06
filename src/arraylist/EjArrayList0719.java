@@ -22,10 +22,8 @@ public class EjArrayList0719 {
         //llamamos a la funcion de comparacion 
         
         System.out.println(compararArrays(arr1,arr2));
-        
         System.out.println(compararArrays(arr2,arr3));
         System.out.println(compararArrays(arr3,arr4));
-        
         
     }   // fin main
     
@@ -35,7 +33,6 @@ public class EjArrayList0719 {
         Collections.sort(ar1);
         Collections.sort(ar2);
 
-        
         // devolvemos true si son iguales false si no lo son.
         return ar1.equals(ar2);
         
