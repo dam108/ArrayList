@@ -1,13 +1,11 @@
 package arraylist;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.HashSet;
 public class EjArrayList0714 {
     public static Scanner teclado;
     public static Factura fac1;
     public static void main(String[] args) {
         teclado = new Scanner(System.in);
-        int opcion = 0;
+        int opcion;
                 
         do {
             // elegimos lo que queremos hacer con la factura
@@ -112,6 +110,7 @@ public class EjArrayList0714 {
         switch (opModLinea){
             case 1:
                 System.out.println("Introduce la nueva descripcion: ");
+                teclado.nextLine();
                 String des = teclado.nextLine();
                 // llamamos a la factura,pedirmos el arraylist, pedimos la linea que queremos y cambiamos la descripcion
                 fac1.getLineaFactura().get(numLi).setDescipcion(des);
@@ -121,8 +120,10 @@ public class EjArrayList0714 {
                 double precioUnidad = teclado.nextDouble();
                 // llamamos a la factura,pedirmos el arraylist, pedimos la linea que queremos y cambiamos la unidad
                 fac1.getLineaFactura().get(numLi).setPrecioUnidad(precioUnidad);
+                /* DEBUG
                 System.out.println(fac1.getLineaFactura().get(numLi).getPrecioUnidad() + " importe linea ");
                 System.out.println(fac1.getLineaFactura().get(numLi).getImporteLinea() + " importe total ");
+                */
                 break;
             case 3:
                 System.out.println("Introduce la nueva cantidad: ");
