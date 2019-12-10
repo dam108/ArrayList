@@ -28,13 +28,18 @@ public class EjArrayList0719 {
     }   // fin main
     
     public static boolean compararArrays( ArrayList <Integer> ar1, ArrayList <Integer> ar2 ){
+        
+        // creamos una copia
+        ArrayList <Integer> arreglo1 = new ArrayList <> (ar1);
+        ArrayList <Integer> arreglo2 = new ArrayList <> (ar2);
+        
 
         // ordenamos los arrays
-        Collections.sort(ar1);
-        Collections.sort(ar2);
+        Collections.sort(arreglo1);
+        Collections.sort(arreglo2);
 
         // devolvemos true si son iguales false si no lo son.
-        return ar1.equals(ar2);
+        return arreglo1.equals(arreglo2);
         
     }
     

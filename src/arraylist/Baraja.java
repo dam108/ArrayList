@@ -3,13 +3,25 @@ import java.util.ArrayList;
 public class Baraja {
     private final int numMaxCartas;
     // inicializamos un arraylist de cartas
-    private ArrayList <Carta> cartas = new ArrayList();
+    private ArrayList <Carta> cartas;
     // inicializamos un arraylist de palos
-    private ArrayList <String> palos = new ArrayList();
+    private ArrayList <String> palos;
+    // inicializamos un arrayList de puntuaciones de jugadores
+    private ArrayList <Double> puntuaciones;
     
     /* CONSTRUCTOR */
-    Baraja(){
+    Baraja(int nJ){
+        cartas = new ArrayList();
+        palos = new ArrayList();
+        puntuaciones = new ArrayList();
+        
+        // iniciamos la puntuacón de los x jugadores en 0
+        for (int i = 0; i < nJ; i++) {
+            puntuaciones.add(0.0);
+        }
+        
         numMaxCartas = 40;
+        
         //damos valores al arraylist de palos 
         palos.add("Oros");
         palos.add("Espadas");
@@ -29,6 +41,10 @@ public class Baraja {
         
     } 
     /* FIN CONSTRUCTOR */
+
+    public ArrayList<Double> getPuntuaciones() {
+        return puntuaciones;
+    }
     
     /* METODOS */
     
